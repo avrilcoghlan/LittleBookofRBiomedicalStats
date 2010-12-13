@@ -926,10 +926,13 @@ this document, and github, `https://github.com/ <https://github.com/>`_, to stor
 as I was writing it, and readthedocs, `http://readthedocs.org/ <http://readthedocs.org/>`_, to build and distribute
 this document.
 
+Many of the examples in this booklet are inspired by examples in the excellent Open University book,
+"Medical Statistics", available from `the Open University Shop <http://www.ouw.co.uk/store/>`_.
+
 Contact
 -------
 
-I will be grateful if you will send me (Avril Coghlan) corrections or suggestions for improvements to
+I will be grateful if you will send me (`Avril Coghlan <http://www.ucc.ie/microbio/avrilcoghlan/>`_) corrections or suggestions for improvements to
 my email address a.coghlan@ucc.ie 
 
 License
