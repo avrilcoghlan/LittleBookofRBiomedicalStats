@@ -10,7 +10,7 @@ R statistics software.
 Contents:
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
    src/installr.rst
    src/biomedicalstats.rst
