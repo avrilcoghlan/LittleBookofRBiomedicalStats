@@ -67,12 +67,14 @@ it into R:
 			
 	       # calculate a confidence interval
 	       confidenceLevel <- (1 - alpha)*100
-	       sigma <- sqrt((1/DiseaseExposed) - (1/totExposed) + (1/DiseaseUnexposed) - (1/totUnexposed)) 
+	       sigma <- sqrt((1/DiseaseExposed) - (1/totExposed) + 
+                             (1/DiseaseUnexposed) - (1/totUnexposed)) 
 	       # sigma is the standard error of estimate of log of relative risk
 	       z <- qnorm(1-(alpha/2))         
 	       lowervalue <- relativeRisk * exp(-z * sigma)
 	       uppervalue <- relativeRisk * exp( z * sigma)
-	       print(paste("category =", rowname, ", ", confidenceLevel,"% confidence interval = [",lowervalue,",",uppervalue,"]"))	
+	       print(paste("category =", rowname, ", ", confidenceLevel,
+                  "% confidence interval = [",lowervalue,",",uppervalue,"]"))	
 	    }
          }
       }
@@ -85,7 +87,8 @@ calculate a 99% confidence interval, type:
 
     > calcRelativeRisk(mymatrix,alpha=0.01)
    [1] "category = Exposed , relative risk =  0.173721236521721"
-   [1] "category = Exposed ,  99 % confidence interval = [ 0.140263410926649 , 0.215159946697844 ]"
+   [1] "category = Exposed ,  99 % confidence interval = [ 0.140263410926649 , 
+                                                           0.215159946697844 ]"
 
 This tells you that the estimate of the relative risk is about 0.174, and that a 99% confidence interval is [0.140, 0.215].
 A relative risk of 0.174 means that the risk of disease in people who are exposed (to the treatment or environmental
@@ -159,7 +162,8 @@ the exposure and the disease. You will need to copy and paste the function into 
 	    probControlGivenUnexposed <- ControlUnexposed/totUnexposed
 	
             # calculate the odds ratio            
-	    oddsRatio <- (probDiseaseGivenExposed*probControlGivenUnexposed)/(probControlGivenExposed*probDiseaseGivenUnexposed)
+	    oddsRatio <- (probDiseaseGivenExposed*probControlGivenUnexposed)/
+                         (probControlGivenExposed*probDiseaseGivenUnexposed)
 	    if (quiet == FALSE)
 	    {
 	       print(paste("category =", rowname, ", odds ratio = ",oddsRatio))
@@ -167,14 +171,16 @@ the exposure and the disease. You will need to copy and paste the function into 
 			
 	    # calculate a confidence interval
 	    confidenceLevel <- (1 - alpha)*100
-	    sigma <- sqrt((1/DiseaseExposed)+(1/ControlExposed)+(1/DiseaseUnexposed)+(1/ControlUnexposed)) 
+	    sigma <- sqrt((1/DiseaseExposed)+(1/ControlExposed)+
+                          (1/DiseaseUnexposed)+(1/ControlUnexposed)) 
             # sigma is the standard error of our estimate of the log of the odds ratio
 	    z <- qnorm(1-(alpha/2)) 
    	    lowervalue <- oddsRatio * exp(-z * sigma)
 	    uppervalue <- oddsRatio * exp( z * sigma)
 	    if (quiet == FALSE)
 	    {
-	       print(paste("category =", rowname, ", ", confidenceLevel,"% confidence interval = [",lowervalue,",",uppervalue,"]"))	
+	       print(paste("category =", rowname, ", ", confidenceLevel,
+                  "% confidence interval = [",lowervalue,",",uppervalue,"]"))	
 	    }
 	 }
       }
@@ -192,7 +198,8 @@ For example, to calculate the odds ratio and a 95% confidence interval for the o
 
    > calcOddsRatio(mymatrix,alpha=0.05)
    [1] "category = Exposed , odds ratio =  0.160039091621751"
-   [1] "category = Exposed ,  95 % confidence interval = [ 0.135460641900536 , 0.189077140693912 ]"
+   [1] "category = Exposed ,  95 % confidence interval = [ 0.135460641900536 , 
+                                                           0.189077140693912 ]"
 
 This tells us that our estimate of the odds ratio is about 0.160, and a 95% confidence interval
 for the odds ratio is [0.135, 0.189].
@@ -236,9 +243,11 @@ the data for lack of exposure (row 3 here), by using the "referencerow=" argumen
 
     > calcOddsRatio(mymatrix, referencerow=3)
     [1] "category = Exposure1 , odds ratio =  7.75914634146342"
-    [1] "category = Exposure1 ,  95 % confidence interval = [ 4.32163714854064 , 13.9309131884372 ]"
+    [1] "category = Exposure1 ,  95 % confidence interval = [ 4.32163714854064 , 
+                                                             13.9309131884372 ]"
     [1] "category = Exposure2 , odds ratio =  1.95749418075094"
-    [1] "category = Exposure2 ,  95 % confidence interval = [ 1.38263094540732 , 2.77137111707344 ]"
+    [1] "category = Exposure2 ,  95 % confidence interval = [ 1.38263094540732 , 
+                                                              2.77137111707344 ]"
 
 If your data comes from a cohort study (but not from a case-control study), you can also calculate
 the relative risk for each exposure category:
@@ -247,9 +256,11 @@ the relative risk for each exposure category:
 
    > calcRelativeRisk(mymatrix, referencerow=3)
    [1] "category = Exposure1 , relative risk =  4.00406504065041"
-   [1] "category = Exposure1 ,  95 % confidence interval = [ 2.93130744422409 , 5.46941498113737 ]"
+   [1] "category = Exposure1 ,  95 % confidence interval = [ 2.93130744422409 , 
+                                                             5.46941498113737 ]"
    [1] "category = Exposure2 , relative risk =  1.72793721628068"
-   [1] "category = Exposure2 ,  95 % confidence interval = [ 1.30507489771431 , 2.2878127750653 ]"
+   [1] "category = Exposure2 ,  95 % confidence interval = [ 1.30507489771431 , 
+                                                             2.2878127750653 ]"
 
 
 Testing for an Association Between Disease and Exposure, in a Cohort or Case-Control Study
@@ -392,10 +403,14 @@ to copy and paste this function into R to use it:
        numstrata <- length(mylist)
        # make an array "ntrt" of the number of people in the exposed group, in each stratum
        # make an array "nctrl" of the number of people in the unexposed group, in each stratum
-       # make an array "ptrt" of the number of people in the exposed group that have the disease, in each stratum
-       # make an array "pctrl" of the number of people in the unexposed group that have the disease, in each stratum
-       # make an array "htrt" of the number of people in the exposed group that don't have the disease, in each stratum
-       # make an array "hctrl" of the number of people in the unexposed group that don't have the disease, in each stratum
+       # make an array "ptrt" of the number of people in the exposed group that have the disease, 
+       # in each stratum
+       # make an array "pctrl" of the number of people in the unexposed group that have the disease, 
+       # in each stratum
+       # make an array "htrt" of the number of people in the exposed group that don't have the 
+       # disease, in each stratum
+       # make an array "hctrl" of the number of people in the unexposed group that don't have the 
+       # disease, in each stratum
        ntrt <- vector()
        nctrl <- vector()
        ptrt <- vector()
@@ -420,7 +435,8 @@ to copy and paste this function into R to use it:
 	  ptrt[i] <- DiseaseExposed
 	  htrt[i] <- ControlExposed
        }
-       # calculate Tarone's test of homogeneity, using the rma.mh function from the "metafor" library
+       # calculate Tarone's test of homogeneity, using the rma.mh function from the 
+       # "metafor" library
        tarone <- rma.mh(ptrt, htrt, pctrl, hctrl, ntrt, nctrl)
        pvalue <- tarone$TAp
        print(paste("Pvalue for Tarone's test =", pvalue))
@@ -582,7 +598,8 @@ into R:
           probDiseaseGivenUnexposed <- DiseaseUnexposed/totUnexposed
           probControlGivenExposed <- ControlExposed/totExposed
           probControlGivenUnexposed <- ControlUnexposed/totUnexposed
-          oddsRatio <- (probDiseaseGivenExposed*probControlGivenUnexposed)/(probControlGivenExposed*probDiseaseGivenUnexposed)
+          oddsRatio <- (probDiseaseGivenExposed*probControlGivenUnexposed)/
+                       (probControlGivenExposed*probDiseaseGivenUnexposed)
           print(paste("dose =", dose, ", odds ratio = ",oddsRatio))
        }
     }
@@ -842,8 +859,10 @@ which makes use of the R "rmeta" library (and requires that you have installed t
        numstrata <- length(mylist)
        # make an array "ntrt" of the number of people in the exposed group, in each stratum
        # make an array "nctrl" of the number of people in the unexposed group, in each stratum
-       # make an array "ptrt" of the number of people in the exposed group that have the disease, in each stratum
-       # make an array "pctrl" of the number of people in the unexposed group that have the disease, in each stratum
+       # make an array "ptrt" of the number of people in the exposed group that have the disease, 
+       # in each stratum
+       # make an array "pctrl" of the number of people in the unexposed group that have the disease, 
+       # in each stratum
        ntrt <- vector()
        nctrl <- vector()
        ptrt <- vector()
