@@ -915,7 +915,7 @@ available on the "Introduction to R" website,
 `cran.r-project.org/doc/manuals/R-intro.html <http://cran.r-project.org/doc/manuals/R-intro.html>`_.
 
 To learn about biomedical statistics, I would highly recommend the book "Medical
-statistics" by the Open University, available from `the Open University Shop
+statistics" (product code M249/01) by the Open University, available from `the Open University Shop
 <http://www.ouw.co.uk/store/>`_.
 
 Acknowledgements
@@ -927,7 +927,7 @@ as I was writing it, and readthedocs, `http://readthedocs.org/ <http://readthedo
 this document.
 
 Many of the examples in this booklet are inspired by examples in the excellent Open University book,
-"Medical Statistics", available from `the Open University Shop <http://www.ouw.co.uk/store/>`_.
+"Medical Statistics" (product code M249/01), available from `the Open University Shop <http://www.ouw.co.uk/store/>`_.
 
 Contact
 -------
