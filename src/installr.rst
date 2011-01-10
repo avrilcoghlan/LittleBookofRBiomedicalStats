@@ -18,13 +18,19 @@ To use R, you first need to install the R program on your computer.
 These instructions are for installing R on a Windows PC.
 
 Before you install R on your computer, the first thing to do is to check whether
-R is already installed on your computer (for example, by a previous user). To do this,
-click on the "Start" menu at the bottom left of your Windows desktop, and then move your 
-mouse over "All Programs" in the menu that pops up. See if "R" appears in the list
-of programs that pops up. If it does, it means that R is already installed on your
-computer, and you can start R by selecting "R"  (or R X.X.X, where X.X.X gives the version of R, 
-eg. R 2.10.0) from the list.
+R is already installed on your computer (for example, by a previous user). 
+There are two ways you can do this:
 
+1. Check if there is an "R" icon on the desktop of the computer that you are using.
+   If so, double-click on the "R" icon to start R. If you cannot find an "R" icon, try step 2 instead.
+2. Click on the "Start" menu at the bottom left of your Windows desktop, and then move your 
+   mouse over "All Programs" in the menu that pops up. See if "R" appears in the list
+   of programs that pops up. If it does, it means that R is already installed on your
+   computer, and you can start R by selecting "R"  (or R X.X.X, where X.X.X gives the version of R, 
+   eg. R 2.10.0) from the list.
+
+If either (1) or (2) above does succeed in starting R, it means that R is already installed
+on the computer that you are using. (If neither succeeds, R is not installed yet).
 If there is an old version of R installed on the Windows PC that you are using,
 it is worth installing the latest version of R, to make sure that you have all the
 latest R functions available to you to use.
@@ -56,10 +62,13 @@ To install R on your Windows computer, follow these steps:
 15. The next page says "Select additional tasks" at the top. Click "Next" again.
 16. R should now be installed. This will take about a minute. When R has finished, you will 
     see "Completing the R for Windows Setup Wizard" appear. Click "Finish".
-17. If you click on the "Start" button at the bottom left of your computer screen, and then 
-    choose "All programs", you can start R by selecting "R"  (or R X.X.X, where 
+17. To start R, you can either:
+    (a) Check if there is an "R" icon on the desktop of the computer that you are using.
+    If so, double-click on the "R" icon to start R. If you cannot find an "R" icon, try (b) instead.
+    (b) Click on the "Start" button at the bottom left of your computer screen, and then 
+    choose "All programs", and start R by selecting "R"  (or R X.X.X, where 
     X.X.X gives the version of R, eg. R 2.10.0) from the menu of programs. 
-    The R console (a rectangle) should pop up:
+18. The R console (a rectangle) should pop up:
 
 |image3|
 
@@ -86,18 +95,21 @@ so you need to install them yourself.
 Once you have installed R on a Windows computer (following the steps above), you can install 
 an additional library by following the steps below:
 
-1. Start R by clicking on the "Start" button at the bottom left of your computer screen, 
-   choosing "All programs", and starting R by selecting "R" (or R X.X.X, where
-   X.X.X gives the version of R, eg. R 2.10.0) from the menu of programs. 
-   The R console (a rectangle) should pop up.
-2. Once you have started R, you can now install an R library (eg. the "rmeta" library) by 
+1. To start R, follow (a) or (b):
+    (a) Check if there is an "R" icon on the desktop of the computer that you are using.
+    If so, double-click on the "R" icon to start R. If you cannot find an "R" icon, try (b) instead.
+    (b) Click on the "Start" button at the bottom left of your computer screen, and then 
+    choose "All programs", and start R by selecting "R"  (or R X.X.X, where 
+    X.X.X gives the version of R, eg. R 2.10.0) from the menu of programs. 
+2. The R console (a rectangle) should pop up.
+3. Once you have started R, you can now install an R library (eg. the "rmeta" library) by 
    choosing "Install package(s)" from the "Packages" menu at the top of the R console.
    This will ask you what website you want to download the package from, you should choose 
    "Ireland" (or another country, if you prefer). It will also bring up a list of available
    packages that you can install, and you should choose the package that you want to install
    from that list (eg. "rmeta").
-3. This will install the "rmeta" package.
-4. The "rmeta" package is now installed. Whenever you want to use the "rmeta" package after this, 
+4. This will install the "rmeta" package.
+5. The "rmeta" package is now installed. Whenever you want to use the "rmeta" package after this, 
    after starting R, you first have to load the package by typing into the R console:
 
 ::
@@ -123,23 +135,26 @@ R libraries such as "yeastExpData", "Biostrings", etc.
 To install the Bioconductor libraries, follow these steps:
 
 
-1. Start R by clicking on the "Start" button at the bottom left of your computer screen, 
-   choosing "All programs", and starting R by selecting "R" (or R X.X.X, where
-   X.X.X gives the version of R, eg. R 2.10.0) from the menu of programs. 
-   The R console should pop up.
-2. Once you have started R, now type in the R console:
+1. To start R, follow (a) or (b):
+    (a) Check if there is an "R" icon on the desktop of the computer that you are using.
+    If so, double-click on the "R" icon to start R. If you cannot find an "R" icon, try (b) instead.
+    (b) Click on the "Start" button at the bottom left of your computer screen, and then 
+    choose "All programs", and start R by selecting "R"  (or R X.X.X, where 
+    X.X.X gives the version of R, eg. R 2.10.0) from the menu of programs. 
+2. The R console (a rectangle) should pop up.
+3. Once you have started R, now type in the R console:
 
 ::
 
     > source("http://bioconductor.org/biocLite.R")
     > biocLite()
 
-3. This will install a core set of Bioconductor libraries ("affy", "affydata", "affyPLM", 
+4. This will install a core set of Bioconductor libraries ("affy", "affydata", "affyPLM", 
    "annaffy", "annotate", "Biobase", "Biostrings", "DynDoc", "gcrma", "genefilter", 
    "geneplotter", "hgu95av2.db", "limma", "marray", "matchprobes", "multtest", "ROC", 
    "vsn", "xtable", "affyQCReport").
    This takes a few minutes (eg. 10 minutes). 
-4. At a later date, you may wish to install some extra Bioconductor libraries that do not belong 
+5. At a later date, you may wish to install some extra Bioconductor libraries that do not belong 
    to the core set of Bioconductor libraries. For example, to install the Bioconductor library called 
    "yeastExpData", start R and type in the R console:
 
@@ -148,7 +163,7 @@ To install the Bioconductor libraries, follow these steps:
     > source("http://bioconductor.org/biocLite.R")
     > biocLite("yeastExpData")
 
-5. Whenever you want to use a library after installing it, you need to load it into R by typing:
+6. Whenever you want to use a library after installing it, you need to load it into R by typing:
 
 ::
 
@@ -159,12 +174,15 @@ Running R
 
 To use R, you first need to start the R program on your computer.
 You should have already installed R on your computer (see above). 
-To start R, click on the "Start" menu at the bottom left of your
-Windows desktop, and then move your mouse over "All Programs" in
-the menu that pops up, and then click on 'R' (or R X.X.X, where
-X.X.X gives the version of R, eg. R 2.10.0) in the list of programs
-that pops up. This should bring up a new window, which is the
-*R console*.
+
+To start R, you can either:
+(a) Check if there is an "R" icon on the desktop of the computer that you are using.
+If so, double-click on the "R" icon to start R. If you cannot find an "R" icon, try (b) instead.
+(b) Click on the "Start" button at the bottom left of your computer screen, and then 
+choose "All programs", and start R by selecting "R"  (or R X.X.X, where 
+X.X.X gives the version of R, eg. R 2.10.0) from the menu of programs.
+
+This should bring up a new window, which is the *R console*.
 
 A brief introduction to R
 -------------------------
