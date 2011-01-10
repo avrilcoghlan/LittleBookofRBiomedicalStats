@@ -104,6 +104,63 @@ an additional library by following the steps below:
 
     > library("rmeta")
 
+Note that there are some additional R libraries for bioinformatics that are part of a special 
+set of R libraries called Bioconductor (`www.bioconductor.org <http://www.bioconductor.org/>`_) 
+such as the "yeastExpData" R library, the "Biostrings" R library, etc.). 
+These Bioconductor libraries need to be installed using a different, Bioconductor-specific procedure 
+(see `How to install a Bioconductor R library`_ below).
+
+How to install a Bioconductor R library
+---------------------------------------
+
+The procedure above can be used to install the majority of R libraries. However, the
+Bioconductor set of bioinformatics R libraries need to be installed by a special procedure.
+Bioconductor is a group of R libraries that have been developed for bioinformatics. This includes 
+some R libraries that you will be using, such as the "yeastExpData", "Biostrings", etc.
+
+
+To install the Bioconductor libraries, follow these steps:
+
+
+1. Start R by clicking on the "Start" button at the bottom left of your computer screen, 
+   choosing "All programs", and starting R by selecting "R" (or R X.X.X, where
+   X.X.X gives the version of R, eg. R 2.10.0) from the menu of programs. 
+   The R console should pop up.
+2. Once you have started R, now type in the R console:
+
+::
+
+    > source("http://bioconductor.org/biocLite.R")
+    > biocLite()
+
+3. This will install a core set of Bioconductor libraries ("affy", "affydata", "affyPLM", 
+   "annaffy", "annotate", "Biobase", "Biostrings", "DynDoc", "gcrma", "genefilter", 
+   "geneplotter", "hgu95av2.db", "limma", "marray", "matchprobes", "multtest", "ROC", 
+   "vsn", "xtable", "affyQCReport").
+   This takes a few minutes (eg. 10 minutes). 
+4. At a later date, you may wish to install some extra Bioconductor libraries that do not belong 
+   to the core set of Bioconductor libraries. For example, to install the Bioconductor library called 
+   "yeastExpData", start R and type in the R console:
+
+::
+
+    > source("http://bioconductor.org/biocLite.R")
+    > biocLite("yeastExpData")
+
+5. For these practicals, you will need to install the following Bioconductor libraries that are not
+   part of the core Bioconductor set: biomaRt, yeastExpData, and yeastCC:
+
+::
+
+    > biocLite("biomaRt")
+    > biocLite("yeastCC")
+
+6. Whenever you want to use a library after installing it, you need to load it into R by typing:
+
+::
+
+   > library("yeastExpData")
+
 Running R
 -----------
 
