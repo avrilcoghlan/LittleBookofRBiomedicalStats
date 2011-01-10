@@ -79,15 +79,12 @@ an additional library by following the steps below:
    X.X.X gives the version of R, eg. R 2.10.0) from the menu of programs. 
    The R console (a rectangle) should pop up.
 2. Once you have started R, you can now install an R library (eg. the "rmeta" library) by 
-   using the install.packages() R function. For example, to install the "rmeta" library, type in
-   the R console:
-
-::
-
-    > install.packages("rmeta")
-
-3. This will ask you what website you want to download the package from, you should choose 
-   "Ireland" (or another country, if you prefer). This will install the "rmeta" package.
+   choosing "Install package(s)" from the "Packages" menu at the top of the R console.
+   This will ask you what website you want to download the package from, you should choose 
+   "Ireland" (or another country, if you prefer). It will also bring up a list of available
+   packages that you can install, and you should choose the package that you want to install
+   from that list (eg. "rmeta").
+3. This will install the "rmeta" package.
 4. The "rmeta" package is now installed. Whenever you want to use the "rmeta" package after this, 
    after starting R, you first have to load the package by typing into the R console:
 

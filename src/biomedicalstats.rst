@@ -370,11 +370,12 @@ We can enter our data into R as follows:
 The Mantel-Haenszel odds ratio estimates the odds ratio for association between the exposure and disease, controlling
 for the possible confounding effects of the stratifying variable (gender here). There is an R library
 called "lawstat" that contains a function "cmh.test()" for calculating the Mantel-Haenszel odds ratio.
-To use this function, we first need to install and load the "lawstat" R library by typing:
+To use this function, we first need to install the "lawstat" R library (for instructions on how to
+install an R library, see `How to install an R library <./src/installr.html#how-to-install-an-r-library>`_).
+Once you have installed the "lawstat" R library, you can load the "lawstat" R library by typing:
 
 ::
 
-    > install.packages("lawstat")
     > library("lawstat")
 
 You can then use the "cmh.test()" function to calculate the Mantel-Haenszel odds ratio:
@@ -406,12 +407,13 @@ Note that if the we see very different odds ratios for the two strata, it sugges
 used to separate the data into strata (gender here) is a confounder, and we should probably not use
 the Mantel-Haenszel odds ratio. To test whether the odds ratios in the different 
 strata are different, we can use a test called Tarone's test. To calculate Tarone's test,
-we can use functions from the "metafor" library. We first need to install and
-load the "metafor" R library:
+we can use functions from the "metafor" library. 
+To use this function, we first need to install the "metafor" R library (for instructions on how to
+install an R library, see `How to install an R library <./src/installr.html#how-to-install-an-r-library>`_).
+Once you have installed the "metafor" R library, you can load the "metafor" R library by typing:
 
 ::
 
-    > install.packages("metafor")
     > library("metafor")
 
 We can then use the function calcTaronesTest() below to perform Tarone's test. You will need
