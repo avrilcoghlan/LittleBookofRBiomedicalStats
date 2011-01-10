@@ -371,7 +371,7 @@ The Mantel-Haenszel odds ratio estimates the odds ratio for association between 
 for the possible confounding effects of the stratifying variable (gender here). There is an R library
 called "lawstat" that contains a function "cmh.test()" for calculating the Mantel-Haenszel odds ratio.
 To use this function, we first need to install the "lawstat" R library (for instructions on how to
-install an R library, see `How to install an R library <./src/installr.html#how-to-install-an-r-library>`_).
+install an R library, see `How to install an R library <./installr.html#how-to-install-an-r-library>`_).
 Once you have installed the "lawstat" R library, you can load the "lawstat" R library by typing:
 
 ::
@@ -409,7 +409,7 @@ the Mantel-Haenszel odds ratio. To test whether the odds ratios in the different
 strata are different, we can use a test called Tarone's test. To calculate Tarone's test,
 we can use functions from the "metafor" library. 
 To use this function, we first need to install the "metafor" R library (for instructions on how to
-install an R library, see `How to install an R library <./src/installr.html#how-to-install-an-r-library>`_).
+install an R library, see `How to install an R library <./installr.html#how-to-install-an-r-library>`_).
 Once you have installed the "metafor" R library, you can load the "metafor" R library by typing:
 
 ::
