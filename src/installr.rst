@@ -116,7 +116,7 @@ How to install a Bioconductor R library
 The procedure above can be used to install the majority of R libraries. However, the
 Bioconductor set of bioinformatics R libraries need to be installed by a special procedure.
 Bioconductor is a group of R libraries that have been developed for bioinformatics. This includes 
-some R libraries that you will be using, such as the "yeastExpData", "Biostrings", etc.
+R libraries such as "yeastExpData", "Biostrings", etc.
 
 
 To install the Bioconductor libraries, follow these steps:
@@ -147,15 +147,7 @@ To install the Bioconductor libraries, follow these steps:
     > source("http://bioconductor.org/biocLite.R")
     > biocLite("yeastExpData")
 
-5. For these practicals, you will need to install the following Bioconductor libraries that are not
-   part of the core Bioconductor set: biomaRt, yeastExpData, and yeastCC:
-
-::
-
-    > biocLite("biomaRt")
-    > biocLite("yeastCC")
-
-6. Whenever you want to use a library after installing it, you need to load it into R by typing:
+5. Whenever you want to use a library after installing it, you need to load it into R by typing:
 
 ::
 
