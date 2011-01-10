@@ -1040,7 +1040,7 @@ Many of the examples in this booklet are inspired by examples in the excellent O
 "Medical Statistics" (product code M249/01), available from `the Open University Shop <http://www.ouw.co.uk/store/>`_.
 
 For very helpful comments and suggestions for improvements, I would like to say thank you very much to:
-Tony Burton, Richard A. Friedman, Duleep Samuel, and Phil Spector.
+Tony Burton, Richard A. Friedman, Duleep Samuel, R.Heberto Ghezzo, and Phil Spector.
 
 Contact
 -------
