@@ -95,23 +95,21 @@ so you need to install them yourself.
 Once you have installed R on a Windows computer (following the steps above), you can install 
 an additional library by following the steps below:
 
-1. To start R, follow (a) or (b):
-
-    (a) Check if there is an "R" icon on the desktop of the computer that you are using.
-    If so, double-click on the "R" icon to start R. If you cannot find an "R" icon, try (b) instead.
-    (b) Click on the "Start" button at the bottom left of your computer screen, and then 
-    choose "All programs", and start R by selecting "R"  (or R X.X.X, where 
-    X.X.X gives the version of R, eg. R 2.10.0) from the menu of programs. 
-
-2. The R console (a rectangle) should pop up.
-3. Once you have started R, you can now install an R library (eg. the "rmeta" library) by 
+1. To start R, follow either step 2 or 3:
+2. Check if there is an "R" icon on the desktop of the computer that you are using.
+   If so, double-click on the "R" icon to start R. If you cannot find an "R" icon, try step 3 instead.
+3. Click on the "Start" button at the bottom left of your computer screen, and then 
+   choose "All programs", and start R by selecting "R"  (or R X.X.X, where 
+   X.X.X gives the version of R, eg. R 2.10.0) from the menu of programs. 
+4. The R console (a rectangle) should pop up.
+5. Once you have started R, you can now install an R library (eg. the "rmeta" library) by 
    choosing "Install package(s)" from the "Packages" menu at the top of the R console.
    This will ask you what website you want to download the package from, you should choose 
    "Ireland" (or another country, if you prefer). It will also bring up a list of available
    packages that you can install, and you should choose the package that you want to install
    from that list (eg. "rmeta").
-4. This will install the "rmeta" package.
-5. The "rmeta" package is now installed. Whenever you want to use the "rmeta" package after this, 
+6. This will install the "rmeta" package.
+7. The "rmeta" package is now installed. Whenever you want to use the "rmeta" package after this, 
    after starting R, you first have to load the package by typing into the R console:
 
 ::
@@ -137,28 +135,26 @@ R libraries such as "yeastExpData", "Biostrings", etc.
 To install the Bioconductor libraries, follow these steps:
 
 
-1. To start R, follow (a) or (b):
-
-    (a) Check if there is an "R" icon on the desktop of the computer that you are using.
-    If so, double-click on the "R" icon to start R. If you cannot find an "R" icon, try (b) instead.
-    (b) Click on the "Start" button at the bottom left of your computer screen, and then 
+1. To start R, follow either step 2 or 3:
+2. Check if there is an "R" icon on the desktop of the computer that you are using.
+   If so, double-click on the "R" icon to start R. If you cannot find an "R" icon, try step 3 instead.
+3. Click on the "Start" button at the bottom left of your computer screen, and then 
     choose "All programs", and start R by selecting "R"  (or R X.X.X, where 
     X.X.X gives the version of R, eg. R 2.10.0) from the menu of programs. 
-
-2. The R console (a rectangle) should pop up.
-3. Once you have started R, now type in the R console:
+4. The R console (a rectangle) should pop up.
+5. Once you have started R, now type in the R console:
 
 ::
 
     > source("http://bioconductor.org/biocLite.R")
     > biocLite()
 
-4. This will install a core set of Bioconductor libraries ("affy", "affydata", "affyPLM", 
+6. This will install a core set of Bioconductor libraries ("affy", "affydata", "affyPLM", 
    "annaffy", "annotate", "Biobase", "Biostrings", "DynDoc", "gcrma", "genefilter", 
    "geneplotter", "hgu95av2.db", "limma", "marray", "matchprobes", "multtest", "ROC", 
    "vsn", "xtable", "affyQCReport").
    This takes a few minutes (eg. 10 minutes). 
-5. At a later date, you may wish to install some extra Bioconductor libraries that do not belong 
+7. At a later date, you may wish to install some extra Bioconductor libraries that do not belong 
    to the core set of Bioconductor libraries. For example, to install the Bioconductor library called 
    "yeastExpData", start R and type in the R console:
 
@@ -167,7 +163,7 @@ To install the Bioconductor libraries, follow these steps:
     > source("http://bioconductor.org/biocLite.R")
     > biocLite("yeastExpData")
 
-6. Whenever you want to use a library after installing it, you need to load it into R by typing:
+8. Whenever you want to use a library after installing it, you need to load it into R by typing:
 
 ::
 
@@ -179,12 +175,12 @@ Running R
 To use R, you first need to start the R program on your computer.
 You should have already installed R on your computer (see above). 
 
-To start R, you can either:
-(a) Check if there is an "R" icon on the desktop of the computer that you are using.
-If so, double-click on the "R" icon to start R. If you cannot find an "R" icon, try (b) instead.
-(b) Click on the "Start" button at the bottom left of your computer screen, and then 
-choose "All programs", and start R by selecting "R"  (or R X.X.X, where 
-X.X.X gives the version of R, eg. R 2.10.0) from the menu of programs.
+To start R, you can either follow step 1 or 2:
+1. Check if there is an "R" icon on the desktop of the computer that you are using.
+   If so, double-click on the "R" icon to start R. If you cannot find an "R" icon, try step 2 instead.
+2. Click on the "Start" button at the bottom left of your computer screen, and then 
+   choose "All programs", and start R by selecting "R"  (or R X.X.X, where 
+   X.X.X gives the version of R, eg. R 2.10.0) from the menu of programs.
 
 This should bring up a new window, which is the *R console*.
 
