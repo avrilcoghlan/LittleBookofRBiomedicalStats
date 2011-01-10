@@ -9,6 +9,15 @@ that are common in biomedical statistics. In particular, the focus is on cohort
 and case-control studies that aim to test whether particular factors are
 associated with disease, randomised trials, and meta-analysis.
 
+This booklet assumes that the reader has some basic knowledge of biomedical statistics, and
+the principal focus of the booklet is not to explain biomedical statistics analyses, but rather 
+to explain how to carry out these analyses using R.
+
+If you are new to biomedical statistics, and want to learn more about any of the concepts
+presented here, I would highly recommend the Open University book 
+"Medical Statistics" (product code M249/01), available from
+from `the Open University Shop <http://www.ouw.co.uk/store/>`_.
+
 Calculating Relative Risks for a Cohort Study
 ---------------------------------------------
 
@@ -36,7 +45,12 @@ You can enter the data in R by typing:
                Disease Control
     Exposed       156    9421
     Unexposed    1531   14797
-    
+
+The relative risk of having the disease given exposure is the probability of having the
+disease for people who were exposed to the treatment or environmental factor, divided
+by the probability of having the disease for people who were not exposed to that treatment
+or environmental factor.
+
 You can calculate the relative risk of having the disease given exposure in R, by using a
 function calcRelativeRisk(). To be able to use this function, just copy the following code and paste
 it into R:
@@ -106,10 +120,17 @@ For this purpose it is used similarly to the calcOddsRatio() function (see below
 Calculating Odds Ratios for a Cohort or Case-Control Study
 ----------------------------------------------------------
 
-As well as the relative risk of disease given exposure (to some treatment or environmental factor eg. smoking or some drug),
-you can also calculate the odds ratio for association between the exposure and the disease
+As well as the relative risk of disease given exposure (to some treatment or environmental factor eg. smoking or some drug), you can also calculate the odds ratio for association between the exposure and the disease
 in a cohort study. The odds ratio is also commonly calculated in a case-control
-study. Again, for either a cohort study or case-control study, your data will look something like this:
+study. 
+
+The odds ratio for association between the exposure and the disease is the ratio of:
+(i) the probability of having the disease for people who were exposed to the treatment or 
+environmental factor, divided by the probability of not having the disease for people who were exposed,
+and (ii) the probability of having the disease for people who were not exposed to the treatment or
+environmental factor, divided by the probability of not having the disease for people who were not exposed.
+
+Again, for either a cohort study or case-control study, your data will look something like this:
 
 Your data set would look something like this:
 

@@ -6,7 +6,11 @@ University College Cork, Cork, Ireland.
 Email: a.coghlan@ucc.ie
 
 This is a simple introduction to biomedical statistics using the
-R statistics software. 
+R statistics software.
+
+There is a pdf version of this booklet available at
+`http://www.ucc.ie/microbio/avrilcoghlan/ALittleBookOfBiomedicalStats.pdf 
+<http://www.ucc.ie/microbio/avrilcoghlan/ALittleBookOfBiomedicalStats.pdf>`_. 
 
 Contents:
 
@@ -23,6 +27,9 @@ Thank you to Noel O'Boyle for helping in using Sphinx, `http://sphinx.pocoo.org 
 this document, and github, `https://github.com/ <https://github.com/>`_, to store different versions of the document
 as I was writing it, and readthedocs, `http://readthedocs.org/ <http://readthedocs.org/>`_, to build and distribute
 this document.
+
+For very helpful comments and suggestions for improvements, thank you very much to:
+Tony Burton, Richard A. Friedman, and Phil Spector.
 
 Contact
 -------
