@@ -2,7 +2,7 @@ Welcome to a Little Book of R for Biomedical Statistics!
 ========================================================
 
 By `Avril Coghlan <http://www.ucc.ie/microbio/avrilcoghlan/>`_,
-University College Cork, Ireland. 
+University College Cork, Cork, Ireland. 
 Email: a.coghlan@ucc.ie
 
 This is a simple introduction to biomedical statistics using the
