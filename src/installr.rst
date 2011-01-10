@@ -465,6 +465,9 @@ this document, and github, `https://github.com/ <https://github.com/>`_, to stor
 as I was writing it, and readthedocs, `http://readthedocs.org/ <http://readthedocs.org/>`_, to build and distribute
 this document.
 
+For very helpful comments and suggestions for improvements, thank you very much to:
+Tony Burton, Richard A. Friedman, and Phil Spector.
+
 Contact
 -------
 
