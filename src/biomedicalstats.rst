@@ -972,7 +972,7 @@ Many of the examples in this booklet are inspired by examples in the excellent O
 "Medical Statistics" (product code M249/01), available from `the Open University Shop <http://www.ouw.co.uk/store/>`_.
 
 For very helpful comments and suggestions for improvements, thank you very much to:
-Tony Burton, Richard A. Friedman, and Phil Spector.
+Tony Burton, Richard A. Friedman, Duleep Samuel, and Phil Spector.
 
 Contact
 -------

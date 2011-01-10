@@ -494,7 +494,7 @@ as I was writing it, and readthedocs, `http://readthedocs.org/ <http://readthedo
 this document.
 
 For very helpful comments and suggestions for improvements, thank you very much to:
-Tony Burton, Richard A. Friedman, and Phil Spector.
+Tony Burton, Richard A. Friedman, Duleep Samuel, and Phil Spector.
 
 Contact
 -------
