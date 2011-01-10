@@ -36,6 +36,8 @@ particular disease or not. Your data set would look something like this:
 
 You can enter the data in R by typing:
 
+.. highlight:: r
+
 ::
 
     > mymatrix <- matrix(c(156,9421,1531,14797),nrow=2,byrow=TRUE)
