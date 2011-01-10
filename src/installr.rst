@@ -63,13 +63,11 @@ To install R on your Windows computer, follow these steps:
 16. R should now be installed. This will take about a minute. When R has finished, you will 
     see "Completing the R for Windows Setup Wizard" appear. Click "Finish".
 17. To start R, you can either:
-
-    (a) Check if there is an "R" icon on the desktop of the computer that you are using.
-    If so, double-click on the "R" icon to start R. If you cannot find an "R" icon, try (b) instead.
-    (b) Click on the "Start" button at the bottom left of your computer screen, and then 
-    choose "All programs", and start R by selecting "R"  (or R X.X.X, where 
-    X.X.X gives the version of R, eg. R 2.10.0) from the menu of programs. 
-
+    | (a) Check if there is an "R" icon on the desktop of the computer that you are using.
+    | If so, double-click on the "R" icon to start R. If you cannot find an "R" icon, try (b) instead.
+    | (b) Click on the "Start" button at the bottom left of your computer screen, and then 
+    | choose "All programs", and start R by selecting "R"  (or R X.X.X, where 
+    | X.X.X gives the version of R, eg. R 2.10.0) from the menu of programs. 
 18. The R console (a rectangle) should pop up:
 
 |image3|
