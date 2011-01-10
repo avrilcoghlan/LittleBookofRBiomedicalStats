@@ -387,9 +387,16 @@ information about the function that you asked for help with.
 
 If you are not sure of the name of a function, but think you know
 part of its name, you can search for the function name using the
-help.search() function. For example, if you want to know if there
+help.search() and RSiteSearch() functions. The help.search() function
+searches to see if you already have a function installed (from one of
+the R libraries that you have installed) that may be related to some
+topic you're interested in. The RSiteSearch() function searches all
+R functions (including those in libraries that you haven't yet installed)
+for functions related to the topic you are interested in.
+
+For example, if you want to know if there
 is a function to calculate the standard deviation of a set of
-numbers, you can search for the names of all functions containing
+numbers, you can search for the names of all installed functions containing
 the word "deviation" in their description by typing:
 
 ::
@@ -409,6 +416,20 @@ the word "deviation" in their description by typing:
 Among the functions that were found, is the function sd() in the
 "stats" library (an R library that comes with the standard R
 installation), which is used for calculating the standard deviation.
+
+In the example above, the help.search() function found a relevant
+function (sd() here). However, if you did not find what you were looking
+for with help.search(), you could then use the RSiteSearch() function to
+see if a search of all functions described on the R website may find
+something relevant to the topic that you're interested in:
+
+:: 
+
+   > RSiteSearch("deviation") 
+
+The results of the RSiteSearch() function will be hits to descriptions
+of R functions, as well as to R mailing list discussions of those
+functions.
 
 We can perform computations with R using objects such as scalars
 and vectors. For example, to calculate the average of the values in
