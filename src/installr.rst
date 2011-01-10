@@ -63,6 +63,18 @@ To install R on your Windows computer, follow these steps:
 
 |image3|
 
+How to install R on non-Windows computers (eg. Macintosh or Linux computers)
+----------------------------------------------------------------------------
+
+The instructions above are for installing R on a Windows PC. If you want to install R 
+on a computer that has a non-Windows operating system (for example, a Macintosh or computer running Linux,
+you should download the appropriate R installer for that operating system at 
+`http://ftp.heanet.ie/mirrors/cran.r-project.org
+<http://ftp.heanet.ie/mirrors/cran.r-project.org/>`_ and 
+follow the R installation instructions for the appropriate operating system at 
+`http://ftp.heanet.ie/mirrors/cran.r-project.org/doc/FAQ/R-FAQ.html#How-can-R-be-installed_003f 
+<http://ftp.heanet.ie/mirrors/cran.r-project.org/doc/FAQ/R-FAQ.html#How-can-R-be-installed_003f>`_).
+
 How to install an R library
 ---------------------------
 
