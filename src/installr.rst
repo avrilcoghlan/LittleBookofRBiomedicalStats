@@ -548,7 +548,7 @@ as I was writing it, and readthedocs, `http://readthedocs.org/ <http://readthedo
 this document.
 
 For very helpful comments and suggestions for improvements, thank you very much to:
-Tony Burton, Richard A. Friedman, Duleep Samuel, R.Heberto Ghezzo, and Phil Spector.
+Tony Burton, Richard A. Friedman, Duleep Samuel, R.Heberto Ghezzo, David Levine, Lavinia Gordon, and Phil Spector.
 
 Contact
 -------
