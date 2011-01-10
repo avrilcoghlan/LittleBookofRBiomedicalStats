@@ -390,11 +390,11 @@ We can enter our data into R as follows:
     Unexposed       5      43
 
 The Mantel-Haenszel odds ratio estimates the odds ratio for association between the exposure and disease, controlling
-for the possible confounding effects of the stratifying variable (gender here). There is an R library
+for the possible confounding effects of the stratifying variable (gender here). There is an R package
 called "lawstat" that contains a function "cmh.test()" for calculating the Mantel-Haenszel odds ratio.
-To use this function, we first need to install the "lawstat" R library (for instructions on how to
-install an R library, see `How to install an R library <./installr.html#how-to-install-an-r-library>`_).
-Once you have installed the "lawstat" R library, you can load the "lawstat" R library by typing:
+To use this function, we first need to install the "lawstat" R package (for instructions on how to
+install an R package, see `How to install an R package <./installr.html#how-to-install-an-r-package>`_).
+Once you have installed the "lawstat" R package, you can load the "lawstat" R package by typing:
 
 .. highlight:: r
 
@@ -433,10 +433,10 @@ Note that if the we see very different odds ratios for the two strata, it sugges
 used to separate the data into strata (gender here) is a confounder, and we should probably not use
 the Mantel-Haenszel odds ratio. To test whether the odds ratios in the different 
 strata are different, we can use a test called Tarone's test. To calculate Tarone's test,
-we can use functions from the "metafor" library. 
-To use this function, we first need to install the "metafor" R library (for instructions on how to
-install an R library, see `How to install an R library <./installr.html#how-to-install-an-r-library>`_).
-Once you have installed the "metafor" R library, you can load the "metafor" R library by typing:
+we can use functions from the "metafor" package. 
+To use this function, we first need to install the "metafor" R package (for instructions on how to
+install an R package, see `How to install an R package <./installr.html#how-to-install-an-r-package>`_).
+Once you have installed the "metafor" R package, you can load the "metafor" R package by typing:
 
 .. highlight:: r
 
@@ -489,7 +489,7 @@ to copy and paste this function into R to use it:
 	  htrt[i] <- ControlExposed
        }
        # calculate Tarone's test of homogeneity, using the rma.mh function from the 
-       # "metafor" library
+       # "metafor" package
        tarone <- rma.mh(ptrt, htrt, pctrl, hctrl, ntrt, nctrl)
        pvalue <- tarone$TAp
        print(paste("Pvalue for Tarone's test =", pvalue))
@@ -934,7 +934,7 @@ We can enter the data into R as follows:
     > mylist <- list(mymatrix1,mymatrix2,mymatrix3,mymatrix4,mymatrix5,mymatrix6,mymatrix7)
 
 We can then make a forest plot of the data using the following function, "makeForestPlotForRCTs()",
-which makes use of the R "rmeta" library (and requires that you have installed the "rmeta" library):
+which makes use of the R "rmeta" package (and requires that you have installed the "rmeta" package):
 
 .. highlight:: r
 
@@ -1040,7 +1040,8 @@ Many of the examples in this booklet are inspired by examples in the excellent O
 "Medical Statistics" (product code M249/01), available from `the Open University Shop <http://www.ouw.co.uk/store/>`_.
 
 For very helpful comments and suggestions for improvements, I would like to say thank you very much to:
-Tony Burton, Richard A. Friedman, Duleep Samuel, R.Heberto Ghezzo, David Levine, Lavinia Gordon, and Phil Spector.
+Tony Burton, Richard A. Friedman, Duleep Samuel, R.Heberto Ghezzo, David Levine, Lavinia Gordon, Friedrich Leisch,
+and Phil Spector.
 
 Contact
 -------

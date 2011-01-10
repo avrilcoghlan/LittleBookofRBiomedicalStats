@@ -48,7 +48,7 @@ example, 2.12.1).
 New releases of R are made very regularly (approximately once a month), as R is actively being
 improved all the time. It is worthwhile installing new versions of R regularly, to make sure
 that you have a recent version of R (to ensure compatibility with all the latest versions of
-the R libraries that you have downloaded). 
+the R packages that you have downloaded). 
 
 Installing R on a Windows PC
 ----------------------------
@@ -98,16 +98,16 @@ follow the R installation instructions for the appropriate operating system at
 `http://ftp.heanet.ie/mirrors/cran.r-project.org/doc/FAQ/R-FAQ.html#How-can-R-be-installed_003f 
 <http://ftp.heanet.ie/mirrors/cran.r-project.org/doc/FAQ/R-FAQ.html#How-can-R-be-installed_003f>`_).
 
-How to install an R library
+How to install an R package
 ---------------------------
 
-R comes with some standard libraries that are installed when you install R. However, in this 
-booklet I will also tell you how to use some additional R libraries that are useful, for example,
-the "rmeta" library. These additional libraries do not come with the standard installation of R,
+R comes with some standard packages that are installed when you install R. However, in this 
+booklet I will also tell you how to use some additional R packages that are useful, for example,
+the "rmeta" package. These additional packages do not come with the standard installation of R,
 so you need to install them yourself.
 
 Once you have installed R on a Windows computer (following the steps above), you can install 
-an additional library by following the steps below:
+an additional package by following the steps below:
 
 1. To start R, follow either step 2 or 3:
 2. Check if there is an "R" icon on the desktop of the computer that you are using.
@@ -116,7 +116,7 @@ an additional library by following the steps below:
    choose "All programs", and start R by selecting "R"  (or R X.X.X, where 
    X.X.X gives the version of R, eg. R 2.10.0) from the menu of programs. 
 4. The R console (a rectangle) should pop up.
-5. Once you have started R, you can now install an R library (eg. the "rmeta" library) by 
+5. Once you have started R, you can now install an R package (eg. the "rmeta" package) by 
    choosing "Install package(s)" from the "Packages" menu at the top of the R console.
    This will ask you what website you want to download the package from, you should choose 
    "Ireland" (or another country, if you prefer). It will also bring up a list of available
@@ -132,23 +132,23 @@ an additional library by following the steps below:
 
     > library("rmeta")
 
-Note that there are some additional R libraries for bioinformatics that are part of a special 
-set of R libraries called Bioconductor (`www.bioconductor.org <http://www.bioconductor.org/>`_) 
-such as the "yeastExpData" R library, the "Biostrings" R library, etc.). 
-These Bioconductor libraries need to be installed using a different, Bioconductor-specific procedure 
-(see `How to install a Bioconductor R library`_ below).
+Note that there are some additional R packages for bioinformatics that are part of a special 
+set of R packages called Bioconductor (`www.bioconductor.org <http://www.bioconductor.org/>`_) 
+such as the "yeastExpData" R package, the "Biostrings" R package, etc.). 
+These Bioconductor packages need to be installed using a different, Bioconductor-specific procedure 
+(see `How to install a Bioconductor R package`_ below).
 
-How to install a Bioconductor R library
+How to install a Bioconductor R package
 ---------------------------------------
 
-The procedure above can be used to install the majority of R libraries. However, the
-Bioconductor set of bioinformatics R libraries need to be installed by a special procedure.
+The procedure above can be used to install the majority of R packages. However, the
+Bioconductor set of bioinformatics R packages need to be installed by a special procedure.
 Bioconductor (`www.bioconductor.org <http://www.bioconductor.org/>`_)
-is a group of R libraries that have been developed for bioinformatics. This includes 
-R libraries such as "yeastExpData", "Biostrings", etc.
+is a group of R packages that have been developed for bioinformatics. This includes 
+R packages such as "yeastExpData", "Biostrings", etc.
 
 
-To install the Bioconductor libraries, follow these steps:
+To install the Bioconductor packages, follow these steps:
 
 
 1. To start R, follow either step 2 or 3:
@@ -165,13 +165,13 @@ To install the Bioconductor libraries, follow these steps:
     > source("http://bioconductor.org/biocLite.R")
     > biocLite()
 
-6. This will install a core set of Bioconductor libraries ("affy", "affydata", "affyPLM", 
+6. This will install a core set of Bioconductor packages ("affy", "affydata", "affyPLM", 
    "annaffy", "annotate", "Biobase", "Biostrings", "DynDoc", "gcrma", "genefilter", 
    "geneplotter", "hgu95av2.db", "limma", "marray", "matchprobes", "multtest", "ROC", 
    "vsn", "xtable", "affyQCReport").
    This takes a few minutes (eg. 10 minutes). 
-7. At a later date, you may wish to install some extra Bioconductor libraries that do not belong 
-   to the core set of Bioconductor libraries. For example, to install the Bioconductor library called 
+7. At a later date, you may wish to install some extra Bioconductor packages that do not belong 
+   to the core set of Bioconductor packages. For example, to install the Bioconductor package called 
    "yeastExpData", start R and type in the R console:
 
 .. highlight:: r
@@ -181,7 +181,7 @@ To install the Bioconductor libraries, follow these steps:
     > source("http://bioconductor.org/biocLite.R")
     > biocLite("yeastExpData")
 
-8. Whenever you want to use a library after installing it, you need to load it into R by typing:
+8. Whenever you want to use a package after installing it, you need to load it into R by typing:
 
 .. highlight:: r
 
@@ -445,9 +445,9 @@ If you are not sure of the name of a function, but think you know
 part of its name, you can search for the function name using the
 help.search() and RSiteSearch() functions. The help.search() function
 searches to see if you already have a function installed (from one of
-the R libraries that you have installed) that may be related to some
+the R packages that you have installed) that may be related to some
 topic you're interested in. The RSiteSearch() function searches all
-R functions (including those in libraries that you haven't yet installed)
+R functions (including those in packages that you haven't yet installed)
 for functions related to the topic you are interested in.
 
 For example, if you want to know if there
@@ -472,7 +472,7 @@ the word "deviation" in their description by typing:
     vsn::meanSdPlot     Plot row standard deviations versus row
 
 Among the functions that were found, is the function sd() in the
-"stats" library (an R library that comes with the standard R
+"stats" package (an R package that comes with the standard R
 installation), which is used for calculating the standard deviation.
 
 In the example above, the help.search() function found a relevant
@@ -562,7 +562,8 @@ as I was writing it, and readthedocs, `http://readthedocs.org/ <http://readthedo
 this document.
 
 For very helpful comments and suggestions for improvements, thank you very much to:
-Tony Burton, Richard A. Friedman, Duleep Samuel, R.Heberto Ghezzo, David Levine, Lavinia Gordon, and Phil Spector.
+Tony Burton, Richard A. Friedman, Duleep Samuel, R.Heberto Ghezzo, David Levine, Lavinia Gordon, 
+Friedrich Leisch, and Phil Spector.
 
 Contact
 -------
