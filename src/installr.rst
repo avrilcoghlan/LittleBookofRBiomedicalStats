@@ -35,6 +35,20 @@ If there is an old version of R installed on the Windows PC that you are using,
 it is worth installing the latest version of R, to make sure that you have all the
 latest R functions available to you to use.
 
+Finding out what is the latest version of R
+-------------------------------------------
+
+To find out what is the latest version of R, you can look at the CRAN (Comprehensive
+R Network) website, `http://cran.r-project.org/ <http://cran.r-project.org/>`_.
+
+Beside "The latest release" (about half way down the page), it will say something like
+"R-X.X.X.tar.gz" (eg. "R-2.12.1.tar.gz"). This means that the latest release of R is X.X.X (for
+example, 2.12.1).
+
+New releases of R are made very regularly (approximately once a month), as R is actively being
+improved all the time. It is worthwhile installing new versions of R regularly, to make sure
+that you have a recent version of R (to ensure compatibility with all the latest versions of
+the R libraries that you have downloaded). 
 
 Installing R on a Windows PC
 ----------------------------
