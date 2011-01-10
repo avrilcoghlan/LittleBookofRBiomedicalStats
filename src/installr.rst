@@ -115,7 +115,8 @@ How to install a Bioconductor R library
 
 The procedure above can be used to install the majority of R libraries. However, the
 Bioconductor set of bioinformatics R libraries need to be installed by a special procedure.
-Bioconductor is a group of R libraries that have been developed for bioinformatics. This includes 
+Bioconductor (`www.bioconductor.org <http://www.bioconductor.org/>`_)
+is a group of R libraries that have been developed for bioinformatics. This includes 
 R libraries such as "yeastExpData", "Biostrings", etc.
 
 
