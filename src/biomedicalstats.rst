@@ -57,6 +57,8 @@ You can calculate the relative risk of having the disease given exposure in R, b
 function calcRelativeRisk(). To be able to use this function, just copy the following code and paste
 it into R:
 
+.. highlight:: r
+
 ::
 
     > calcRelativeRisk <- function(mymatrix,alpha=0.05,referencerow=2)
@@ -98,6 +100,8 @@ it into R:
 You can now use the function calcRelativeRisk() to calculate the relative risk of having the
 disease given exposure, and a confidence interval for that relative risk. For example, to
 calculate a 99% confidence interval, type:
+
+.. highlight:: r
 
 ::
 
@@ -146,6 +150,8 @@ Your data set would look something like this:
 
 You can enter the data in R by typing:
 
+.. highlight:: r
+
 ::
 
     > mymatrix <- matrix(c(156,9421,1531,14797),nrow=2,byrow=TRUE)
@@ -158,6 +164,8 @@ You can enter the data in R by typing:
 
 You can use the following R function, calcOddsRatio() to calculate the odds ratio for association between
 the exposure and the disease. You will need to copy and paste the function into R before you can use it:
+
+.. highlight:: r
 
 ::
 
@@ -217,6 +225,8 @@ You can then use the function to calculate the odds ratio for association betwee
 and the disease, and a confidence interval for the odds ratio.
 For example, to calculate the odds ratio and a 95% confidence interval for the odds ratio:
 
+.. highlight:: r
+
 ::
 
    > calcOddsRatio(mymatrix,alpha=0.05)
@@ -247,6 +257,8 @@ no smoking). In that case, our data will look like this:
 
 You can enter the data in R by typing (notice that you need to type "nrow=3" now to have 3 rows):
 
+.. highlight:: r
+
 ::
 
     > mymatrix <- matrix(c(30,24,76,241,82,509),nrow=3,byrow=TRUE)
@@ -262,6 +274,8 @@ We can again use the function calcOddsRatio() to calculate the odds ratio for ea
 relative to lack of exposure. We need to tell the calcOddsRatio() which row in our data matrix contains
 the data for lack of exposure (row 3 here), by using the "referencerow=" argument:
 
+.. highlight:: r
+
 ::
 
     > calcOddsRatio(mymatrix, referencerow=3)
@@ -274,6 +288,8 @@ the data for lack of exposure (row 3 here), by using the "referencerow=" argumen
 
 If your data comes from a cohort study (but not from a case-control study), you can also calculate
 the relative risk for each exposure category:
+
+.. highlight:: r
 
 ::
 
@@ -295,6 +311,8 @@ smoking or taking a certain drug).
 
 In R, you can test for an association using the Chi-squared test, or Fisher's exact test.
 For example, using our data from the example above:
+
+.. highlight:: r
 
 ::
 
@@ -351,6 +369,8 @@ Data for men:
 
 We can enter our data into R as follows:
 
+.. highlight:: r
+
 ::
 
     > mymatrix1 <- matrix(c(4,5,5,103),nrow=2,byrow=TRUE)
@@ -376,11 +396,15 @@ To use this function, we first need to install the "lawstat" R library (for inst
 install an R library, see `How to install an R library <./installr.html#how-to-install-an-r-library>`_).
 Once you have installed the "lawstat" R library, you can load the "lawstat" R library by typing:
 
+.. highlight:: r
+
 ::
 
     > library("lawstat")
 
 You can then use the "cmh.test()" function to calculate the Mantel-Haenszel odds ratio:
+
+.. highlight:: r
 
 ::
 
@@ -414,12 +438,16 @@ To use this function, we first need to install the "metafor" R library (for inst
 install an R library, see `How to install an R library <./installr.html#how-to-install-an-r-library>`_).
 Once you have installed the "metafor" R library, you can load the "metafor" R library by typing:
 
+.. highlight:: r
+
 ::
 
     > library("metafor")
 
 We can then use the function calcTaronesTest() below to perform Tarone's test. You will need
 to copy and paste this function into R to use it:
+
+.. highlight:: r
 
 ::
 
@@ -469,7 +497,9 @@ to copy and paste this function into R to use it:
 
 
 We can then use the "calcTaronesTest()" function to perform Tarone's test:
- 
+
+.. highlight:: r
+
 ::
 
     > mylist <- list(mymatrix1,mymatrix2)
@@ -499,6 +529,8 @@ drug). The data would look something like this:
 
 We can enter our data into R as follows:
 
+.. highlight:: r
+
 ::
 
     > mymatrix <- matrix(c(10,57,13,95),nrow=2,byrow=TRUE)
@@ -513,6 +545,8 @@ We can enter our data into R as follows:
 We can then use the function calcMHRatio() below to calculate the Mantel-Haenszel odds
 ratio for association between the exposure and the disease. You will first need to copy and paste
 this function into R:
+
+.. highlight:: r
 
 ::
 
@@ -536,6 +570,8 @@ this function into R:
 We can then use the function calcMHRatio() to calculate the Mantel-Haenszel odds ratio
 for our data set:
 
+.. highlight:: r
+
 ::
 
     > calcMHRatio(mymatrix)
@@ -548,6 +584,8 @@ interval for the odds ratio is [2.40, 8.01].
 For a 1-1 matched case-control study, we can use a test called McNemar's test to test for a significant
 association between the exposure and the disease. We can use the function "mcnemar.test()" to carry out
 McNemar's test in R:
+
+.. highlight:: r
 
 ::
 
@@ -584,6 +622,8 @@ For example, your data may look like this:
 
 We can enter our data into R as follows (note that you need to type "nrow=5" to tell R that there are 5 rows of data):
 
+.. highlight:: r
+
 ::
 
     > mymatrix <- matrix(c(35,82,250,293,196,190,136,71,32,13),nrow=5,byrow=TRUE)
@@ -601,6 +641,8 @@ In this case, it is usual to calculate the odds ratio for association between ea
 dose (level of exposure) and the disease, relative to the lowest dose. We can calculate these odds
 ratios using the following function "doseSpecificOddsRatios()", which you will need to copy and paste
 into R:
+
+.. highlight:: r
 
 ::
 
@@ -631,6 +673,8 @@ into R:
 
 We can then use this function to calculate the dose-specific odds ratios for our data:
 
+.. highlight:: r
+
 ::
 
     > doseSpecificOddsRatios(mymatrix)
@@ -646,6 +690,8 @@ regression line is significantly different from zero, it indicates that there is
 between dose and the odds of having the disease, given exposure. We can fit the linear regression line and test whether
 its slope is significantly different from zero using the following R function, doseOddsDiseaseRegression(), which you
 will need to copy and paste into R to use:
+
+.. highlight:: r
 
 ::
 
@@ -685,6 +731,8 @@ We can then use the function doseOddsDiseaseRegression() to test whether the slo
 line for log(odds) versus dose is significantly different from zero, and also to make a plot of log(odds)
 versus dose:
 
+.. highlight:: r
+
 ::
 
     > doseOddsDiseaseRegression(mymatrix)
@@ -704,6 +752,8 @@ out a randomised control trial with two groups (for example, where one group wil
 you want to test, and the other group will take a placebo). You can calculate the sample size required
 in each group using the following function, "calcSampleSizeForRCT()", which you will need to copy
 and paste into R to use:
+
+.. highlight:: r
 
 ::
 
@@ -731,6 +781,8 @@ significance level and 90% power, and the estimated incidences of the disease in
 and study groups is 0.15 and 0.2, respectively, then to calculate the required sample size
 for each group, you would type:
 
+.. highlight:: r
+
 ::
 
     > calcSampleSizeForRCT(alpha=0.05, gamma=0.90, piT=0.15, piC=0.2)
@@ -743,6 +795,8 @@ If we estimate that there are likely to be a certain fraction of people who are 
 we can adjust our estimates of the number of people required for the trial. For example, if we
 estimate that 10% of the people are likely to be lost to follow-up, we can calculate the number
 of people required for the trial as:
+
+.. highlight:: r
 
 ::
 
@@ -758,6 +812,8 @@ Calculating the Power of a Randomised Control Trial
 If, for practical reasons, you can only have a maximum of a certain number of people in each group
 of your randomised control trial, then you can calculate the statistical power that your trial will have.
 You can do this using the following function, "calcPowerForRC()":
+
+.. highlight:: r
 
 ::
 
@@ -776,6 +832,8 @@ For example, to calculate the power of a randomised control trial involving 500 
 control group and 250 in the treatment group), where the significance level is 0.05, and the estimated
 incidence of the disease in the control and treatment group is 0.3 and 0.2, respectively, we type:
 
+.. highlight:: r
+
 ::
 
     > calcPowerForRCT(alpha=0.05, piT=0.2, piC=0.3, n=250)
@@ -783,7 +841,7 @@ incidence of the disease in the control and treatment group is 0.3 and 0.2, resp
 
 This tells us that the power for the randomised control trial will be 73%.
 
-Making a Forest Plot for A Meta-analysis of Several Different Randomised Control Trials:
+Making a Forest Plot for a Meta-analysis of Several Different Randomised Control Trials:
 ----------------------------------------------------------------------------------------
 
 If you want to carry out a meta-analysis of several different randomised control trials, it is
@@ -862,6 +920,8 @@ Data for trial 7:
 
 We can enter the data into R as follows:
 
+.. highlight:: r
+
 ::
   
     > mymatrix1 <- matrix(c(198,728,128,576),nrow=2,byrow=TRUE)
@@ -875,6 +935,8 @@ We can enter the data into R as follows:
 
 We can then make a forest plot of the data using the following function, "makeForestPlotForRCTs()",
 which makes use of the R "rmeta" library (and requires that you have installed the "rmeta" library):
+
+.. highlight:: r
 
 ::
 
@@ -926,6 +988,8 @@ which makes use of the R "rmeta" library (and requires that you have installed t
 
 We can then make a forest plot of the data from the seven different trials by typing:
 
+.. highlight:: r
+
 ::
 
     > makeForestPlotForRCTs(mylist)
@@ -935,7 +999,9 @@ We can then make a forest plot of the data from the seven different trials by ty
 We can use the "calcTaronesTest()" function to perform Tarone's test (see above), to test
 whether there is a significant difference between the seven trials in the odds ratio for 
 association between the disease and the exposure:
- 
+
+.. highlight:: r
+
 ::
 
     > calcTaronesTest(mylist)
