@@ -112,6 +112,8 @@ an additional library by following the steps below:
 7. The "rmeta" package is now installed. Whenever you want to use the "rmeta" package after this, 
    after starting R, you first have to load the package by typing into the R console:
 
+.. highlight:: r
+
 ::
 
     > library("rmeta")
@@ -142,6 +144,8 @@ To install the Bioconductor libraries, follow these steps:
 4. The R console (a rectangle) should pop up.
 5. Once you have started R, now type in the R console:
 
+.. highlight:: r
+
 ::
 
     > source("http://bioconductor.org/biocLite.R")
@@ -156,12 +160,16 @@ To install the Bioconductor libraries, follow these steps:
    to the core set of Bioconductor libraries. For example, to install the Bioconductor library called 
    "yeastExpData", start R and type in the R console:
 
+.. highlight:: r
+
 ::
 
     > source("http://bioconductor.org/biocLite.R")
     > biocLite("yeastExpData")
 
 8. Whenever you want to use a library after installing it, you need to load it into R by typing:
+
+.. highlight:: r
 
 ::
 
@@ -199,6 +207,8 @@ the Return key.
 Once you have started R, you can start typing in commands, and the
 results will be calculated immediately, for example:
 
+.. highlight:: r
+
 ::
 
     > 2*3
@@ -211,12 +221,16 @@ called *objects*. In R, we assign values to variables using an
 arrow. For example, we can assign the value 2\*3 to the variable
 *x* using the command:
 
+.. highlight:: r
+
 ::
 
     > x <- 2*3 
 
 To view the contents of any R object, just type its name, and the
 contents of that R object will be displayed:
+
+.. highlight:: r
 
 ::
 
@@ -235,12 +249,16 @@ To create a vector, we can use the c() (combine) function. For
 example, to create a vector called *myvector* that has elements
 with values 8, 6, 9, 10, and 5, we type:
 
+.. highlight:: r
+
 ::
 
     > myvector <- c(8, 6, 9, 10, 5)
 
 To see the contents of the variable *myvector*, we can just type
 its name:
+
+.. highlight:: r
 
 ::
 
@@ -253,6 +271,8 @@ the index of that element given in square brackets. For example, to
 get the value of the 4th element in the vector *myvector*, we
 type:
 
+.. highlight:: r
+
 ::
 
     > myvector[4]
@@ -264,12 +284,16 @@ also include other variables such as a vector. The list() function
 is used to create a list. For example, we could create a list
 *mylist* by typing:
 
+.. highlight:: r
+
 ::
 
     > mylist <- list(name="Fred", wife="Mary", myvector)
 
 We can then print out the contents of the list *mylist* by typing
 its name:
+
+.. highlight:: r
 
 ::
 
@@ -290,6 +314,8 @@ name with the index of the element given in double square brackets
 brackets). Thus, we can extract the second and third elements from
 *mylist* by typing:
 
+.. highlight:: r
+
 ::
 
     > mylist[[2]]
@@ -303,6 +329,8 @@ followed by the element name. For example, *mylist$name* is the
 same as *mylist[[1]]* and *mylist$wife* is the same as
 *mylist[[2]]*:
 
+.. highlight:: r
+
 ::
 
     > mylist$wife
@@ -310,6 +338,8 @@ same as *mylist[[1]]* and *mylist$wife* is the same as
 
 We can find out the names of the named elements in a list by using
 the attributes() function, for example:
+
+.. highlight:: r
 
 ::
 
@@ -330,6 +360,8 @@ containing the names of children in a class, we can use the table()
 function to produce a table variable that contains the number of
 children with each possible name:
 
+.. highlight:: r
+
 ::
 
     > mynames <- c("Mary", "John", "Ann", "Sinead", "Joe", "Mary", "Jim", "John", "Simon")
@@ -341,6 +373,8 @@ children with each possible name:
 We can store the table variable produced by the function table(),
 and call the stored table "mytable", by typing:
 
+.. highlight:: r
+
 ::
 
     > mytable <- table(mynames)
@@ -350,6 +384,8 @@ square brackets, just like accessing elements in a list. For
 example, to access the fourth element in the table *mytable* (the
 number of children called "John"), we type:
 
+.. highlight:: r
+
 ::
 
     > mytable[[4]]
@@ -357,6 +393,8 @@ number of children called "John"), we type:
 
 Alternatively, you can use the name of the fourth element in
 the table ("John") to find the value of that table element:
+
+.. highlight:: r
 
 ::
 
@@ -369,6 +407,8 @@ carry out some operation on. For example, the log10() function is
 passed a number, and it then calculates the log to the base 10 of
 that number:
 
+.. highlight:: r
+
 ::
 
     > log10(100)
@@ -377,6 +417,8 @@ that number:
 In R, you can get help about a particular function by using the
 help() function. For example, if you want help about the log10()
 function, you can type:
+
+.. highlight:: r
 
 ::
 
@@ -398,6 +440,8 @@ For example, if you want to know if there
 is a function to calculate the standard deviation of a set of
 numbers, you can search for the names of all installed functions containing
 the word "deviation" in their description by typing:
+
+.. highlight:: r
 
 ::
 
@@ -423,6 +467,8 @@ for with help.search(), you could then use the RSiteSearch() function to
 see if a search of all functions described on the R website may find
 something relevant to the topic that you're interested in:
 
+.. highlight:: r
+
 :: 
 
    > RSiteSearch("deviation") 
@@ -436,6 +482,8 @@ and vectors. For example, to calculate the average of the values in
 the vector *myvector* (ie. the average of 8, 6, 9, 10 and 5), we
 can use the mean() function:
 
+.. highlight:: r
+
 ::
 
     > mean(myvector)
@@ -448,6 +496,8 @@ often on different input data sets. For example, we can create a
 function to calculate the value of 20 plus square of some input
 number:
 
+.. highlight:: r
+
 ::
 
     > myfunction <- function(x) { return(20 + (x*x)) }
@@ -458,6 +508,8 @@ value. Once you have typed in this function, the function is then
 available for use. For example, we can use the function for
 different input numbers (eg. 10, 25):
 
+.. highlight:: r
+
 ::
 
     > myfunction(10)
@@ -466,6 +518,8 @@ different input numbers (eg. 10, 25):
     [1] 645
 
 To quit R, type:
+
+.. highlight:: r
 
 ::
 
