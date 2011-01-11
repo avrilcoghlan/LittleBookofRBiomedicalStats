@@ -9,8 +9,8 @@ This is a simple introduction to biomedical statistics using the
 R statistics software.
 
 There is a pdf version of this booklet available at
-`http://www.ucc.ie/microbio/avrilcoghlan/ALittleBookOfBiomedicalStats.pdf 
-<http://www.ucc.ie/microbio/avrilcoghlan/ALittleBookOfBiomedicalStats.pdf>`_. 
+
+`http://media.readthedocs.org/pdf/a-little-book-of-r-for-biomedical-statistics/latest/a-little-book-of-r-for-biomedical-statistics.pdf <http://media.readthedocs.org/pdf/a-little-book-of-r-for-biomedical-statistics/latest/a-little-book-of-r-for-biomedical-statistics.pdf>`_. 
 
 Contents:
 
