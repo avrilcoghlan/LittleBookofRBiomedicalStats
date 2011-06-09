@@ -24,7 +24,7 @@ There is a pdf version of this booklet available at
 If you like this booklet, you may also like to check out my booklet on using
 R for time series analysis, 
 `http://a-little-book-of-r-for-time-series.readthedocs.org/
-<http://a-little-book-of-r-for-time-series.readthedocs.org/>`
+<http://a-little-book-of-r-for-time-series.readthedocs.org/>`_.
 
 Calculating Relative Risks for a Cohort Study
 ---------------------------------------------
