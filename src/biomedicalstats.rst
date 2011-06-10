@@ -344,7 +344,7 @@ For example, using our data from the example above:
     
 Here the P-value for the Chi-squared test is about 7e-14, and the P-value for Fisher's exact
 test is about 5e-12. Both are very tiny (<0.05), indicating a significant association between
-exposure and disease. 
+exposure and disease (using a cutoff of P<0.05 for statistical significance). 
 
 Calculating the (Mantel-Haenszel) Odds Ratio when there is a Stratifying Variable 
 ---------------------------------------------------------------------------------
@@ -516,7 +516,8 @@ We can then use the "calcTaronesTest()" function to perform Tarone's test:
     
 Here the p-value for Tarone's test is greater than 0.05, indicating that there is no
 evidence for a significant difference in the odds ratio between the different strata
-(between males and females, in this example).
+(between males and females, in this example), when a p-value threshold of <0.05 is
+used for statistical significance.
 
 Testing for an Association Between Exposure and Disease in a Matched Case-Control Study
 ---------------------------------------------------------------------------------------
@@ -604,7 +605,8 @@ McNemar's test in R:
     McNemar's chi-squared = 26.4143, df = 1, p-value = 2.755e-07
  
 The p-value for McNemar's test is less than 0.05, indicating that there is a significant
-association between the exposure and the disease. 
+association between the exposure and the disease (using a p-value threshold of <0.05 for
+statistical significance). 
 
 Dose-response analysis:
 -----------------------
@@ -747,7 +749,8 @@ versus dose:
     [1] "pvalue for F-test of zero slope = 0.00659217584881777"
    
 The p-value for the test is less than 0.05, so there is evidence that the slope of the linear regression
-line is significantly different from zero. That is, there seems to be a significant relationship between
+line is significantly different from zero (using a p-value threshold of <0.05 for statistical
+significance). That is, there seems to be a significant relationship between
 dose and odds of having the disease given exposure.
 
 |image4|
@@ -786,7 +789,7 @@ you want to have, the power that you want to have, the estimated incidence of th
 the control group (the group taking a placebo), and the estimated incidence of the disease in
 the treatment group (the group taking the drug). For example, if you want to have a 5%
 significance level and 90% power, and the estimated incidences of the disease in the control
-and study groups is 0.15 and 0.2, respectively, then to calculate the required sample size
+and study groups is 0.20 and 0.15, respectively, then to calculate the required sample size
 for each group, you would type:
 
 .. highlight:: r
@@ -1017,7 +1020,8 @@ association between the disease and the exposure:
     
 Here the p-value for Tarone's test is greater than 0.05, indicating that there is no
 evidence for a significant difference in the odds ratio between the different strata
-(between the seven trials, in this example).
+(between the seven trials, in this example), when a p-value threshold of <0.05 is
+used for statistical significance.
 
 Links and Further Reading
 -------------------------
