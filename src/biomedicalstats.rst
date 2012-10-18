@@ -1042,6 +1042,9 @@ available on the "Introduction to R" website,
 Robin Beaumont has put some course material on using R for medical statistics on 
 `his webpage <http://www.floppybunny.org/robin/web/virtualclassroom/stats/>`_.
 
+You can find a list of R packages for analysing clinical trial data on the
+`CRAN Clinical Trials Task View <http://cran.r-project.org/web/views/ClinicalTrials.html>`_.
+
 To learn about biomedical statistics, I would highly recommend the book "Medical
 statistics" (product code M249/01) by the Open University, available from `the Open University Shop
 <http://www.ouw.co.uk/store/>`_.
