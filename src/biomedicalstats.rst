@@ -1040,7 +1040,7 @@ available on the "Introduction to R" website,
 `cran.r-project.org/doc/manuals/R-intro.html <http://cran.r-project.org/doc/manuals/R-intro.html>`_.
 
 Robin Beaumont has put some course material on using R for medical statistics on 
-`http://www.floppybunny.org/robin/web/virtualclassroom/stats/ <his web page>`_.
+`his webpage <http://www.floppybunny.org/robin/web/virtualclassroom/stats/>`_.
 
 To learn about biomedical statistics, I would highly recommend the book "Medical
 statistics" (product code M249/01) by the Open University, available from `the Open University Shop
