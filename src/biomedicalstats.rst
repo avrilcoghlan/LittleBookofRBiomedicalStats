@@ -956,7 +956,7 @@ which makes use of the R "rmeta" package (and requires that you have installed t
 
     > makeForestPlotForRCTs <- function(mylist, referencerow=2)
     {
-       library("rmeta")
+       require("rmeta")
        numstrata <- length(mylist)
        # make an array "ntrt" of the number of people in the exposed group, in each stratum
        # make an array "nctrl" of the number of people in the unexposed group, in each stratum
@@ -1061,8 +1061,8 @@ and Phil Spector.
 Contact
 -------
 
-I will be grateful if you will send me (`Avril Coghlan <http://www.ucc.ie/microbio/avrilcoghlan/>`_) corrections or suggestions for improvements to
-my email address a.coghlan@ucc.ie 
+I will be grateful if you will send me (Avril Coghlan) corrections or suggestions for improvements to
+my email address alc@sanger.ac.uk 
 
 License
 -------
