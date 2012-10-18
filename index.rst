@@ -1,9 +1,9 @@
 Welcome to a Little Book of R for Biomedical Statistics!
 ========================================================
 
-By `Avril Coghlan <http://www.ucc.ie/microbio/avrilcoghlan/>`_,
-University College Cork, Cork, Ireland. 
-Email: a.coghlan@ucc.ie
+By `Avril Coghlan <http://www.sanger.ac.uk/research/projects/parasitegenomics/>`_,
+Parasite Genomics Group, Wellcome Trust Sanger Institute, Cambridge, U.K.
+Email: alc@sanger.ac.uk 
 
 This is a simple introduction to biomedical statistics using the
 R statistics software.
@@ -42,8 +42,8 @@ and Phil Spector.
 Contact
 -------
 
-I will be grateful if you will send me (`Avril Coghlan <http://www.ucc.ie/microbio/avrilcoghlan/>`_) corrections or suggestions for improvements to
-my email address a.coghlan@ucc.ie 
+I will be grateful if you will send me (Avril Coghlan) corrections or suggestions for improvements to
+my email address alc@sanger.ac.uk 
 
 License
 -------
