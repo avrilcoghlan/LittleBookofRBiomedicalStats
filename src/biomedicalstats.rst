@@ -19,7 +19,8 @@ presented here, I would highly recommend the Open University book
 from `the Open University Shop <http://www.ouw.co.uk/store/>`_.
 
 There is a pdf version of this booklet available at
-`https://github.com/avrilcoghlan/LittleBookofRBiomedicalStats/raw/master/_build/latex/BiomedicalStats.pdf <https://github.com/avrilcoghlan/LittleBookofRBiomedicalStats/raw/master/_build/latex/BiomedicalStats.pdf>`_.
+`https://media.readthedocs.org/pdf/a-little-book-of-r-for-biomedical-statistics/latest/a-little-book-of-r-for-biomedical-statistics.pdf
+<https://media.readthedocs.org/pdf/a-little-book-of-r-for-biomedical-statistics/latest/a-little-book-of-r-for-biomedical-statistics.pdf>`_.
 
 If you like this booklet, you may also like to check out my booklet on using
 R for time series analysis, 

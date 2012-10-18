@@ -9,7 +9,8 @@ This is a simple introduction to biomedical statistics using the
 R statistics software.
 
 There is a pdf version of this booklet available at
-`https://github.com/avrilcoghlan/LittleBookofRBiomedicalStats/raw/master/_build/latex/BiomedicalStats.pdf <https://github.com/avrilcoghlan/LittleBookofRBiomedicalStats/raw/master/_build/latex/BiomedicalStats.pdf>`_.
+`https://media.readthedocs.org/pdf/a-little-book-of-r-for-biomedical-statistics/latest/a-little-book-of-r-for-biomedical-statistics.pdf
+<https://media.readthedocs.org/pdf/a-little-book-of-r-for-biomedical-statistics/latest/a-little-book-of-r-for-biomedical-statistics.pdf>`_.
 
 If you like this booklet, you may also like to check out my booklet on using
 R for time series analysis, 
